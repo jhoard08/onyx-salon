@@ -4,7 +4,12 @@ import Navbar from './nav';
 import LandingPage from './landing';
 
 const nav = document.querySelector('#content');
+const head = LandingPage();
+
 
 
 nav.innerHTML = Navbar();
-nav.appendChild(LandingPage());
+nav.appendChild(head.header());
+nav.appendChild(head.meetUs());
+
+
